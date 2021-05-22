@@ -10,7 +10,7 @@ menu='''
 1.-Dime el nombre de todas las regiones.
 2.-Cuenta el numero de regiones.
 3.-Buscar regiones por continentes.
-4.-
+4.-Busqueda por caracteres.
 5.-
 6.-Salir 
 '''
@@ -33,6 +33,20 @@ while opcion!=6:
 		print("Listado de regiones:")
 		busqueda=input("EU,AS,NA,SA,AF,AN,OC:")
 		resultado=BuscarRegiones(regiones,busqueda)
+		for a in resultado:
+			print(a)
+		opcion=int(input("Elige una opcion: "))
+	
+	if opcion==4:
+		busqueda=input("Busca la region:")
+		resultado=FiltrarRegiones(regiones,busqueda)
+		for a in resultado:
+			print(a)
+		opcion=int(input("Elige una opcion: "))
+	
+	if opcion==5:
+		busqueda=input("Busca la region:")
+		resultado=FiltrarRegiones(regiones,busqueda)
 		for a in resultado:
 			print(a)
 		opcion=int(input("Elige una opcion: "))

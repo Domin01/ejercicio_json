@@ -25,6 +25,12 @@ def BuscarRegiones(regiones,busqueda):
             nombre.append(valor["name"])
     return(nombre)
 
+def FiltrarRegiones(regiones,busqueda):
+    nombre=[]
+    for clave, valor in regiones.items():
+        if valor["name"].startswith(busqueda):
+            nombre.append(valor["name"])
+    return nombre
 #Los diccionarios python tienen un par de métodos que pueden serte útiles en este caso. 
 #diccionario.keys() te da una lista con todas las claves del diccionario. diccionario.items() 
 #te da otra lista con parejas (clave, valor).
