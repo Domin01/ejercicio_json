@@ -4,5 +4,4 @@
 * **Contar la información:** Muestra la cantidad de farmacias de las que tenemos información.
 * **Buscar o filtrar información:** Mostrar las regiones que estan en un continente.
 * **Buscar información relacionada:** Mostramos las regiones que empiecen por los datos introducidos.
-* **Ejercicio Libre:** 
-
+* **Ejercicio Libre:** Mostrar la informacion de una region en especifico.
