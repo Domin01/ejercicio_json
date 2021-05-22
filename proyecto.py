@@ -30,7 +30,7 @@ while opcion!=6:
 		opcion=int(input("Elige una opcion: "))
 	
 	if opcion==3:
-		print("Listado de regiones:")
+		print("Listado de continentes:")
 		busqueda=input("EU,AS,NA,SA,AF,AN,OC:")
 		resultado=BuscarRegiones(regiones,busqueda)
 		for a in resultado:
